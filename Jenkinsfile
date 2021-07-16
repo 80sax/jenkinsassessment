@@ -1,8 +1,6 @@
 pipeline {
   agent none
-  tools {
-    maven 'my_maven'
-  }
+  tools { maven 'my_maven' }
   stages {
     parallel {
       stage("Compilation") {
